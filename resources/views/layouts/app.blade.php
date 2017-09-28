@@ -29,7 +29,7 @@
 
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ url('/') }}">
-                        {{ 'Welcom to Gamil Blog' }}
+                        {{ 'Gamil Blog' }}
                     </a>
                 </div>
 

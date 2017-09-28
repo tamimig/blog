@@ -14,7 +14,7 @@
                         </div>
                     @endif
 
-                    Welcome! 
+                    Welcome to our blog! 
                 </div>
             </div>
         </div>
