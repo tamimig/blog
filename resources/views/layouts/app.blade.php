@@ -14,7 +14,8 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
-    <div id="app">
+
+        <div id="app">
         <nav class="navbar navbar-default navbar-static-top">
             <div class="container">
                 <div class="navbar-header">
@@ -29,7 +30,7 @@
 
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ url('/') }}">
-                        {{ 'Gamil Blog' }}
+                        {{ config('app.name', 'Laravel') }}
                     </a>
                 </div>
 
@@ -71,7 +72,40 @@
             </div>
         </nav>
 
-        @yield('content')
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    
+                    <ul class="list-group">
+                        
+                        <li class="list-group-item">
+
+                        <a href="/home">Home</a>
+                            
+                        </li>
+
+                        <li class="list-group-item">
+
+                        <a href="{{route('post.create')}}">Create new News</a>
+                            
+                        </li>
+
+                    </ul>
+
+
+                </div>
+
+                <div class="col-lg-8">
+                    
+                    @yield('content')
+                </div>
+
+            </div>
+
+
+        </div>
+
+        
     </div>
 
     <!-- Scripts -->
